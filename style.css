@@ -122,6 +122,10 @@ main {
 .card-link a {
     font-size: 15px;
     font-weight: 800;
+    color: hsl(245, 75%, 52%);;
+}
+.card-link a:hover {
+    color: hsla(245, 75%, 52%, 0.500);;
 }
 
 .card-icon img {
@@ -150,8 +154,25 @@ main {
     cursor: pointer;
 }
 
+.payment-button:hover {
+    background-color: hsla(245, 75%, 52%, 0.500);;
+}
+
+
+
 .cancel-button {
     cursor: pointer;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
+}
+
+.cancel-button:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media (min-width: 740px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
 }
