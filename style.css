@@ -1,10 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 html {
+    overflow-x: hidden;
+    font-family: 'Red Hat Display';
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size:  100% auto;
+    padding: 1rem;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    max-width: 375px;
+    height: fit-content;
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.illustration-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.order-summary-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.summary-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    word-spacing: 1px;
+}
+
+.summary-info h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.summary-info p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.plan-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-card {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.card-info h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-info p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%)
+}
+
+.card-link a {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.payment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+}
+
+.cancel-button {
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
 }
